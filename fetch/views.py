@@ -9,5 +9,7 @@ from django.http import HttpResponse
 def hello(request):
    return render(request, "fetch/template/hello.html", {})
 
+
 def hello(request):
-   return HttpResponse("WELCOME")
+   text = """<h1>welcome to my app !</h1>"""
+   return HttpResponse(text)
